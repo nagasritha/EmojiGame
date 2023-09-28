@@ -8,6 +8,9 @@
     );
     min-height: 100vh;
   }
+  .emoji-icon {
+    width: 50px;
+  }
   
   .emoji-game-body {
     display: flex;

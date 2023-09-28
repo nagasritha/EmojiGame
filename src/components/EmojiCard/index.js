@@ -1,12 +1,15 @@
+import useSound from 'use-sound'
+import music from '../../1secSound.wav'
 import './index.css'
 
 const EmojiCard = props => {
   const {emojiDetails, clickEmoji} = props
   const {id, emojiName, emojiUrl} = emojiDetails
+  const [play]=useSound(music)
 
   const onClickEmojiCard = () => {
     clickEmoji(id)
-    
+    play()
   }
 
   return (

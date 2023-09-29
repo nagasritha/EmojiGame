@@ -52,7 +52,9 @@ class EmojiGame extends Component{
     }
 
     resultView=(currentScore)=>{
-      return <WinOrLosscard/>
+      const {clickedEmojisList}=this.state
+      return <WinOrLosscard isWon={currentScore===12} onClickPlayAgain={this.resetGame}
+      score={clickedEmojisList.length}/>
     }
 
     render(){

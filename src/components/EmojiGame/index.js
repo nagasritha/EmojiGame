@@ -1,5 +1,6 @@
 import {Component} from 'react'
 import EmojiCard from '../EmojiCard'
+import WinOrLosscard from '../WinOrLoseCard'
 import NavBar from '../NavBar'
 import './index.css'
 
@@ -51,7 +52,7 @@ class EmojiGame extends Component{
     }
 
     resultView=(currentScore)=>{
-      return <h1>result page</h1>
+      return <WinOrLosscard/>
     }
 
     render(){

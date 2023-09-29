@@ -21,23 +21,9 @@ const playAgain=()=>{
 
   return (
    <div className='align'>
-<div className="win-or-lose-card">
-      <div className="details-section">
-        <h1 className="game-status">{gameStatus}</h1>
-        <p className="current-score-label">{scoreLabel}</p>
-        <p className="current-score-value">{score}/12</p>
-        <button
-          type="button"
-          className="play-again-button"
-          onClick={playAgain}
-        >
-          Play Again
-        </button>
-      </div>
-      <div className="image-section">
-        <img className="win-or-lose-image" src={imageUrl} alt="win or lose" />
-      </div>
-    </div>
+     <div className="win-or-lose-card">
+       <h1>hello world</h1>
+     </div>
    </div>
    
   )

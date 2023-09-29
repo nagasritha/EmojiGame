@@ -1,7 +1,6 @@
 import {Component} from 'react'
 import EmojiCard from '../EmojiCard'
 import NavBar from '../NavBar'
-import WinOrLoseCard from '../WinOrLoseCard'
 import './index.css'
 
 class EmojiGame extends Component{
@@ -31,7 +30,7 @@ class EmojiGame extends Component{
     }
 
     renderEmojisList=()=>{
-      const {displayList,clickedEmojisList}=this.state
+      const {displayList}=this.state
      
       return (
         <div className='emojis-list-container'>
@@ -52,13 +51,7 @@ class EmojiGame extends Component{
     }
 
     resultView=(currentScore)=>{
-      const {clickedEmojisList}=this.state
-      const isWon=currentScore===12
-      return <WinOrLoseCard
-      isWon={isWon}
-      onClickPlayAgain={this.resetGame}
-      score={clickedEmojisList.length}
-    />
+      return <h1>result page</h1>
     }
 
     render(){

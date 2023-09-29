@@ -1,3 +1,9 @@
+.align{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:80vh;
+}
 .win-or-lose-card {
     display: flex;
     flex-direction: column;

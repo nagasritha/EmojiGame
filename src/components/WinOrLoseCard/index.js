@@ -20,7 +20,8 @@ const playAgain=()=>{
 }
 
   return (
-    <div className="win-or-lose-card">
+   <div className='align'>
+<div className="win-or-lose-card">
       <div className="details-section">
         <h1 className="game-status">{gameStatus}</h1>
         <p className="current-score-label">{scoreLabel}</p>
@@ -37,6 +38,8 @@ const playAgain=()=>{
         <img className="win-or-lose-image" src={imageUrl} alt="win or lose" />
       </div>
     </div>
+   </div>
+   
   )
 }
 
